@@ -3,3 +3,9 @@ html {
   font-size: 1em;
   background-color: #1c1c1c;
 }
+
+// DEBUG ONLY
+* {
+  outline: 1px solid hotpink;
+  outline-offset: -1px;
+}
