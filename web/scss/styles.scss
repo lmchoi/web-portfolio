@@ -2,6 +2,17 @@ $golden-ratio: 1.61803398875;
 $max-width: 1200px;
 $header-height: 742px;
 $nav-bar-height: 74px;
+$nav-button-width: 120px;
+
+$default-bg-color: #1c1c1c;
+$default-font-color: #d3d3d3;
+$secondary-color: #ffa500;
+$nav-bar-color: #3d3d3d;
+
+* {
+  //outline: 1px solid hotpink;
+  //outline-offset: -1px;
+}
 
 .debug {
   outline: 1px solid hotpink;
@@ -14,29 +25,55 @@ $nav-bar-height: 74px;
   padding: 0;
 }
 
-html {
-  height: 100%;
-  width: 100%;
-  font-size: 1em;
-  color: lightgrey;
-  background-color: #1c1c1c;
-}
-
-header {
-  height: $header-height;
-  text-align: center;
+.vertical-align {
   display: flex;
   justify-content:center;
   align-content:center;
   flex-direction:column;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 1em;
+  color: $default-font-color;
+  background-color: $default-bg-color;
+}
+
+header {
+  height: $header-height;
+  text-align: center;
+}
+
 h1 span {
   display: block;
   font-size: 0.8em;
-  color: orange;
+  color: $secondary-color;
 }
 
 .nav-bar {
   height: $nav-bar-height;
+  background-color: $nav-bar-color;
+  font-size: 1.4em;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+
+  width: $nav-button-width;
+}
+
+nav a {
+  text-decoration: none;
+  color: $default-font-color;
+  outline: 0;
+}
+
+nav a:link {
+}
+
+nav a:hover {
+  color: $secondary-color;
 }
