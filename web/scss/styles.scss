@@ -2,11 +2,12 @@ $golden-ratio: 1.61803398875;
 $max-width: 1200px;
 $header-height: 80vh;
 $nav-bar-height: 7.5vh;
+$nav-bar-button-height: 4.5vh;
 $nav-button-width: 120px;
 
 $default-bg-color: #1c1c1c;
 $default-font-color: #d3d3d3;
-$secondary-color: #ffa500;
+$secondary-color: #ff7600;
 $nav-bar-color: #3d3d3d;
 
 * {
@@ -61,20 +62,26 @@ header {
   font-size: 1.4em;
 }
 
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  text-align: center;
-
-  width: $nav-button-width;
-}
-
 .nav-bar-left {
   float: left;
 }
 
 .nav-bar-right {
   float: right;
+}
+
+.nav-bar-skinny li {
+  width: $nav-bar-button-height + 2vh;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+
+  width: $nav-button-width;
+  height: $nav-bar-height;
+  line-height: $nav-bar-height;
 }
 
 nav a {
@@ -88,4 +95,15 @@ nav a:link {
 
 nav a:hover {
   color: $secondary-color;
+}
+
+.nav-svg-btn {
+  width: $nav-bar-button-height;
+  height: $nav-bar-button-height;
+  fill: $default-font-color;
+  padding-top: 1.5vh;
+}
+
+.nav-svg-btn:hover {
+  fill: $secondary-color;
 }
