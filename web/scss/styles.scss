@@ -4,13 +4,14 @@ $header-height: 80vh;
 $nav-bar-height: 7.5vh;
 $nav-bar-button-height: 4.5vh;
 $nav-button-width: 120px;
+$nav-bar-width: 1400px;
+$section-height: 100vh - $nav-bar-height;
 
 $header-color: #1c1c1c;
 $default-bg-color: #d3d3d3;
 $default-font-color: #d3d3d3;
 $secondary-color: #ff7600;
 $nav-bar-color: #3d3d3d;
-$nav-bar-width: 1400px;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 $header-font: 'Montserrat', sans-serif;
@@ -98,9 +99,6 @@ nav a {
   outline: 0;
 }
 
-nav a:link {
-}
-
 nav a:hover {
   color: $secondary-color;
 }
@@ -117,8 +115,16 @@ nav a:hover {
 }
 
 .hidden-bad-egg {
-  padding-top: 300px;
+  font-size: 2em;
+  height: $section-height;
   text-align: center;
   color: $nav-bar-color;
-  padding-bottom: 300px;
+  line-height: 2;
+}
+
+.hidden-bad-egg a {
+  text-decoration: none;
+  color: $secondary-color;
+  font-weight: bold;
+  outline: 0;
 }
