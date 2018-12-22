@@ -1,11 +1,31 @@
+$golden-ratio: 1.61803398875;
+$max-width: 1200px;
+$header-height: 742px;
+$nav-bar-height: 74px;
+
+.debug {
+  outline: 1px solid hotpink;
+  outline-offset: -1px;
+}
+
+//css reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
-  color: lightgrey;
+  height: 100%;
+  width: 100%;
   font-size: 1em;
+  color: lightgrey;
   background-color: #1c1c1c;
 }
 
-// DEBUG ONLY
-* {
-  outline: 1px solid hotpink;
-  outline-offset: -1px;
+header {
+  height: $header-height;
+}
+
+.nav-bar {
+  height: $nav-bar-height;
 }
