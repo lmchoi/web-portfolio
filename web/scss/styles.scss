@@ -1,7 +1,7 @@
 $golden-ratio: 1.61803398875;
 $max-width: 1200px;
-$header-height: 742px;
-$nav-bar-height: 74px;
+$header-height: 80vh;
+$nav-bar-height: 7.5vh;
 $nav-button-width: 120px;
 
 $default-bg-color: #1c1c1c;
@@ -43,11 +43,15 @@ html {
 header {
   height: $header-height;
   text-align: center;
+  font-size: 1.4em;
 }
 
-h1 span {
+.subtitle {
   display: block;
   font-size: 0.8em;
+}
+
+.highlight {
   color: $secondary-color;
 }
 
@@ -63,6 +67,14 @@ nav ul li {
   text-align: center;
 
   width: $nav-button-width;
+}
+
+.nav-bar-left {
+  float: left;
+}
+
+.nav-bar-right {
+  float: right;
 }
 
 nav a {
