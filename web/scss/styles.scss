@@ -12,6 +12,10 @@ $secondary-color: #ff7600;
 $nav-bar-color: #3d3d3d;
 $nav-bar-width: 1400px;
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+$header-font: 'Montserrat', sans-serif;
+$default-font: 'Open Sans', sans-serif;
+
 .debug {
   outline: 1px solid hotpink;
   outline-offset: -1px;
@@ -36,6 +40,7 @@ html {
   font-size: 1em;
   color: $default-font-color;
   background-color: $default-bg-color;
+  font-family: $default-font;
 }
 
 header {
@@ -43,6 +48,7 @@ header {
   text-align: center;
   font-size: 1.4em;
   background-color: $header-color;
+  font-family: $header-font;
 }
 
 .subtitle {
