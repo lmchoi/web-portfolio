@@ -33,6 +33,12 @@ $default-font: 'Open Sans', sans-serif;
   justify-content:center;
   align-content:center;
   flex-direction:column;
+
+  // safari
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-content: center;
+  -webkit-flex-direction: column;
 }
 
 html {
@@ -115,7 +121,7 @@ nav a:hover {
 }
 
 .hidden-bad-egg {
-  font-size: 2em;
+  font-size: 1.8em;
   height: $section-height;
   text-align: center;
   color: $nav-bar-color;
@@ -127,4 +133,10 @@ nav a:hover {
   color: $secondary-color;
   font-weight: bold;
   outline: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .hidden-bad-egg {
+    font-size: 1em;
+  }
 }
