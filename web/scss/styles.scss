@@ -5,15 +5,12 @@ $nav-bar-height: 7.5vh;
 $nav-bar-button-height: 4.5vh;
 $nav-button-width: 120px;
 
-$default-bg-color: #1c1c1c;
+$header-color: #1c1c1c;
+$default-bg-color: #d3d3d3;
 $default-font-color: #d3d3d3;
 $secondary-color: #ff7600;
 $nav-bar-color: #3d3d3d;
-
-* {
-  //outline: 1px solid hotpink;
-  //outline-offset: -1px;
-}
+$nav-bar-width: 1400px;
 
 .debug {
   outline: 1px solid hotpink;
@@ -45,6 +42,7 @@ header {
   height: $header-height;
   text-align: center;
   font-size: 1.4em;
+  background-color: $header-color;
 }
 
 .subtitle {
@@ -56,9 +54,13 @@ header {
   color: $secondary-color;
 }
 
+nav {
+  background-color: $nav-bar-color;
+}
+
 .nav-bar {
   height: $nav-bar-height;
-  background-color: $nav-bar-color;
+  max-width: $nav-bar-width;
   font-size: 1.4em;
 }
 
@@ -74,7 +76,7 @@ header {
   width: $nav-bar-button-height + 2vh;
 }
 
-nav ul li {
+nav li {
   display: inline-block;
   list-style: none;
   text-align: center;
