@@ -1,0 +1,46 @@
+#wrapper {
+  width: 100%;
+  max-width: 1414px;
+}
+
+html {
+  color: lightgrey;
+  font-size: 1em;
+  background-color: #1c1c1c;
+}
+
+nav {
+  //border: solid orange;
+}
+
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_example_website
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li a {
+  color: orange;
+}
+
+h1 span {
+  display: block;
+  font-size: 0.8em;
+  color: orange;
+}
+
+//content {
+//  margin-top: 100px;
+//}
+
+body {
+
+}
+
+// this is probably preferred over the multi file method to save HTTP requests..
+//@media screen and (max-width: 640px) {
+//  body {
+//    background-color: black;
+//  }
+//}
