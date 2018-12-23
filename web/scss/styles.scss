@@ -2,8 +2,9 @@ $site-max-width: 1200px;
 $header-height: 80vh;
 $banner-width: 67vw;
 
-$nav-bar-width: 1400px;
-$nav-bar-height: 7.5vh;
+$nav-bar-max-width: 1200px;
+$nav-bar-height: 8vh;
+$nav-bar-width: 50vw;
 $nav-bar-button-height: 4.5vh;
 $nav-button-width: 120px;
 
@@ -30,18 +31,7 @@ $default-font: 'Open Sans', sans-serif;
   padding: 0;
 }
 
-.vertical-align {
-  display: flex;
-  justify-content:center;
-  align-content:center;
-  flex-direction:column;
-
-  // safari
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-  -webkit-align-content: center;
-  -webkit-flex-direction: column;
-}
+// Common -------------------------------------------------
 
 html {
   height: 100%;
@@ -52,19 +42,17 @@ html {
   font-family: $default-font;
 }
 
-header {
-  height: $header-height;
-  background-color: $header-color;
-  font-family: $header-font;
-}
+.vertical-align {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 
-.intro-banner {
-  width: $banner-width;
-  text-align: center;
-  font-size: 1.4em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: $site-max-width;
+  // safari
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-content: center;
+  -webkit-flex-direction: column;
 }
 
 .subtitle {
@@ -76,14 +64,46 @@ header {
   color: $secondary-color;
 }
 
+// End of Common -------------------------------------------------
+
+// Header --------------------------------------------------------
+
+header {
+  height: $header-height;
+  background-color: $header-color;
+  font-family: $header-font;
+}
+
+header .intro-banner {
+  width: $banner-width;
+  max-width: $site-max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  font-size: 1.4em;
+}
+
+@media screen and (max-width: 730px) {
+  header .intro-banner {
+    max-width: 280px;
+  }
+}
+
+// End of Header -------------------------------------------------
+
+// Navigation ----------------------------------------------------
+
 nav {
   background-color: $nav-bar-color;
 }
 
 .nav-bar {
   height: $nav-bar-height;
-  max-width: $nav-bar-width;
-  font-size: 1.4em;
+  width: $nav-bar-width;
+  max-width: $nav-bar-max-width;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-bar-left {
