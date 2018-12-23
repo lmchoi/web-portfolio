@@ -1,10 +1,12 @@
-$golden-ratio: 1.61803398875;
-$max-width: 1200px;
+$site-max-width: 1200px;
 $header-height: 80vh;
+$banner-width: 67vw;
+
+$nav-bar-width: 1400px;
 $nav-bar-height: 7.5vh;
 $nav-bar-button-height: 4.5vh;
 $nav-button-width: 120px;
-$nav-bar-width: 1400px;
+
 $section-height: 100vh - $nav-bar-height;
 
 $header-color: #1c1c1c;
@@ -17,7 +19,7 @@ $nav-bar-color: #3d3d3d;
 $header-font: 'Montserrat', sans-serif;
 $default-font: 'Open Sans', sans-serif;
 
-.debug {
+* {
   outline: 1px solid hotpink;
   outline-offset: -1px;
 }
@@ -52,10 +54,17 @@ html {
 
 header {
   height: $header-height;
-  text-align: center;
-  font-size: 1.4em;
   background-color: $header-color;
   font-family: $header-font;
+}
+
+.intro-banner {
+  width: $banner-width;
+  text-align: center;
+  font-size: 1.4em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $site-max-width;
 }
 
 .subtitle {
