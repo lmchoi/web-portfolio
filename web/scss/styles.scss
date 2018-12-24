@@ -5,8 +5,8 @@ $banner-width: 67vw;
 $nav-bar-max-width: 1200px;
 $nav-bar-height: 8vh;
 $nav-bar-width: 50vw;
-$nav-bar-button-height: 4.5vh;
-$nav-button-width: 120px;
+$nav-bar-icon-height: 4.5vh;
+$nav-icon-width: 120px;
 
 $section-height: 100vh - $nav-bar-height;
 
@@ -20,7 +20,7 @@ $nav-bar-color: #3d3d3d;
 $header-font: 'Montserrat', sans-serif;
 $default-font: 'Open Sans', sans-serif;
 
-* {
+.debug {
   outline: 1px solid hotpink;
   outline-offset: -1px;
 }
@@ -81,12 +81,13 @@ header .intro-banner {
   margin-right: auto;
 
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 @media screen and (max-width: 730px) {
   header .intro-banner {
-    max-width: 280px;
+    max-width: 220px;
+    text-align: left;
   }
 }
 
@@ -115,7 +116,7 @@ nav {
 }
 
 .nav-bar-skinny li {
-  width: $nav-bar-button-height + 2vh;
+  width: $nav-bar-icon-height + 2vh;
 }
 
 nav li {
@@ -123,7 +124,7 @@ nav li {
   list-style: none;
   text-align: center;
 
-  width: $nav-button-width;
+  width: $nav-icon-width;
   height: $nav-bar-height;
   line-height: $nav-bar-height;
 }
@@ -138,23 +139,29 @@ nav a:hover {
   color: $secondary-color;
 }
 
-.nav-svg-btn {
-  width: $nav-bar-button-height;
-  height: $nav-bar-button-height;
+.nav-svg-icon {
+  width: $nav-bar-icon-height;
+  height: $nav-bar-icon-height;
   fill: $default-font-color;
   padding-top: 1.5vh;
 }
 
-.nav-svg-btn:hover {
+.nav-svg-icon:hover {
   fill: $secondary-color;
 }
 
 .hidden-bad-egg {
-  font-size: 1.8em;
+  font-size: 1em;
   height: $section-height;
   text-align: center;
   color: $nav-bar-color;
   line-height: 2;
+}
+
+@media screen and (orientation: landscape) and (max-width: 730px) {
+  .hidden-bad-egg {
+    font-size: 0.6em;
+  }
 }
 
 .hidden-bad-egg a {
@@ -162,10 +169,4 @@ nav a:hover {
   color: $secondary-color;
   font-weight: bold;
   outline: 0;
-}
-
-@media screen and (max-width: 600px) {
-  .hidden-bad-egg {
-    font-size: 1em;
-  }
 }
