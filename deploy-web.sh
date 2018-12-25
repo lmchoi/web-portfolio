@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+rm -rf web/styles/*
 sass web/scss/:web/styles/ --style compressed
 
 export S3_DIRECTORY=web
