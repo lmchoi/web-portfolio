@@ -1,0 +1,43 @@
+@import "mixins";
+@import "fonts";
+@import "colors";
+
+// align
+
+.vertical-align {
+  @include flex;
+  @include justify-and-align(center);
+  @include flex-direction(column);
+}
+
+// fonts
+
+.subtitle {
+  display: block;
+  font-size: $subtitle-font-size;
+}
+
+html {
+  font-size: $default-font-size;
+  font-family: $default-font;
+}
+
+header {
+  font-size: $header-font-size;
+  font-family: $header-font;
+}
+
+// colours
+
+.highlight {
+  color: $secondary-color;
+}
+
+header {
+  background-color: $header-color;
+}
+
+body {
+  background-color: $default-bg-color;
+  color: $default-font-color;
+}

@@ -1,0 +1,18 @@
+@mixin flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+@mixin justify-and-align($value) {
+  justify-content: $value;
+  -webkit-justify-content: $value;
+
+  align-content: $value;
+  -webkit-align-content: $value;
+}
+
+@mixin flex-direction($direction) {
+  flex-direction: $direction;
+  -webkit-flex-direction: $direction;
+}
+

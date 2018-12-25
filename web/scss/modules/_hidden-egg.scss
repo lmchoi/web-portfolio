@@ -1,0 +1,26 @@
+$nav-bar-height: 8vh;
+$section-height: 100vh - $nav-bar-height;
+
+$nav-bar-color: #3d3d3d;
+$secondary-color: #ff7600;
+
+.hidden-bad-egg {
+  font-size: 1em;
+  height: $section-height;
+  text-align: center;
+  color: $nav-bar-color;
+  line-height: 2;
+}
+
+@media screen and (orientation: landscape) and (max-width: 730px) {
+  .hidden-bad-egg {
+    font-size: 0.6em;
+  }
+}
+
+.hidden-bad-egg a {
+  text-decoration: none;
+  color: $secondary-color;
+  font-weight: bold;
+  outline: 0;
+}
