@@ -1,20 +1,8 @@
-@import "../base/mixins";
-
 $nav-bar-max-width: 1200px;
 $nav-bar-height: 8vh;
 $nav-bar-width: 50vw;
 $nav-bar-icon-height: 4.5vh;
 $nav-icon-width: 120px;
-$nav-bar-color: #3d3d3d;
-
-$default-bg-color: #d3d3d3;
-$default-font-color: #d3d3d3;
-$secondary-color: #ff7600;
-
-nav {
-  background-color: $nav-bar-color;
-  @include vertical-align;
-}
 
 .nav-bar {
   height: $nav-bar-height;
@@ -38,13 +26,8 @@ nav {
   width: $nav-bar-icon-height + 2vh;
 }
 
-.nav-svg-icon {
+.svg-link {
   width: $nav-bar-icon-height;
   height: $nav-bar-icon-height;
-  fill: $default-font-color;
   padding-top: 1.5vh;
-}
-
-.nav-svg-icon:hover {
-  fill: $secondary-color;
 }

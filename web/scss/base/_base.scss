@@ -34,6 +34,10 @@ body {
   color: $default-font-color;
 }
 
+nav {
+  background-color: $nav-bar-color;
+}
+
 // links
 
 a {
@@ -44,4 +48,12 @@ a {
 
 a:hover {
   color: $secondary-color;
+}
+
+.svg-link {
+  fill: $default-font-color;
+}
+
+.svg-link:hover {
+  fill: $secondary-color;
 }
