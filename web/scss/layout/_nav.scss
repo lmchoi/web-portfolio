@@ -1,5 +1,7 @@
 @import "../base/mixins";
+$nav-bar-height: 8vh;
 
 nav {
   @include vertical-align;
+  height: $nav-bar-height;
 }

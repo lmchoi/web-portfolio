@@ -1,19 +1,38 @@
-$nav-bar-max-width: 1200px;
-$nav-bar-height: 8vh;
+@import "../base/mixins";
+
 $nav-bar-width: 50vw;
+$nav-bar-min-width: 960px;
+$nav-bar-max-width: 1200px;
+
 $nav-bar-icon-height: 4.5vh;
-$nav-icon-width: 120px;
 
 .nav-bar {
-  height: $nav-bar-height;
-  width: $nav-bar-width;
-  max-width: $nav-bar-max-width;
+  @include vertical-align;
+
+  // same height as the parent
+  height: 100%;
+
+  // centre the nav bar
   margin-left: auto;
   margin-right: auto;
+
+  // default width
+  width: $nav-bar-width;
+  min-width: $nav-bar-min-width;
+  max-width: $nav-bar-max-width;
 }
 
+// less padding to the left and right on smaller screen
+@media screen and (max-width: $nav-bar-max-width) {
+  .nav-bar {
+    min-width: 90%;
+    max-width: 90%;
+  }
+}
+
+// flops to the right
 .nav-links {
-  float: right;
+  margin-left: auto;
 }
 
 .nav-links li {
@@ -21,13 +40,10 @@ $nav-icon-width: 120px;
   list-style: none;
   text-align: center;
 
-  height: $nav-bar-height;
-  line-height: $nav-bar-height;
   width: $nav-bar-icon-height + 2vh;
 }
 
 .svg-link {
   width: $nav-bar-icon-height;
   height: $nav-bar-icon-height;
-  padding-top: 1.5vh;
 }

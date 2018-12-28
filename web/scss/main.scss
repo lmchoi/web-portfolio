@@ -1,4 +1,4 @@
-//@import "debug";
+@import "debug";
 
 @import "base/reset";
 @import "base/mixins";
@@ -7,6 +7,7 @@
 @import "base/base";
 
 @import "layout/header";
+@import "layout/nav";
 
 @import "modules/intro-label";
 @import "modules/nav-bar";
