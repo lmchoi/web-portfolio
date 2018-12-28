@@ -1,3 +1,5 @@
+@import "../base/mixins";
+
 $nav-bar-height: 8vh;
 $section-height: 100vh - $nav-bar-height;
 
@@ -5,6 +7,7 @@ $nav-bar-color: #3d3d3d;
 $secondary-color: #ff7600;
 
 .hidden-bad-egg {
+  @include vertical-align;
   font-size: 1em;
   height: $section-height;
   text-align: center;

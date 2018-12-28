@@ -1,5 +1,7 @@
+@import "../base/mixins";
 $header-height: 80vh;
 
 header {
+  @include vertical-align;
   height: $header-height;
 }

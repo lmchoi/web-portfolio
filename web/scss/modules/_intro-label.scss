@@ -1,17 +1,17 @@
 $site-max-width: 1200px;
 $banner-width: 67vw;
 
-.intro-banner {
-  width: $banner-width;
-  max-width: $site-max-width;
+.intro-label {
   margin-left: auto;
   margin-right: auto;
 
+  width: $banner-width;
+  max-width: $site-max-width;
   text-align: center;
 }
 
 @media screen and (max-width: 730px) {
-  .intro-banner {
+  .intro-label {
     max-width: 220px;
     text-align: left;
   }

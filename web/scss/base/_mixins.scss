@@ -16,3 +16,8 @@
   -webkit-flex-direction: $direction;
 }
 
+@mixin vertical-align {
+  @include flex;
+  @include justify-and-align(center);
+  @include flex-direction(column);
+}

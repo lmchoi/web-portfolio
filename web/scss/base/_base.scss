@@ -2,14 +2,6 @@
 @import "fonts";
 @import "colors";
 
-// align
-
-.vertical-align {
-  @include flex;
-  @include justify-and-align(center);
-  @include flex-direction(column);
-}
-
 // fonts
 
 .subtitle {
@@ -40,4 +32,16 @@ header {
 body {
   background-color: $default-bg-color;
   color: $default-font-color;
+}
+
+// links
+
+a {
+  text-decoration: none;
+  color: $default-font-color;
+  outline: 0;
+}
+
+a:hover {
+  color: $secondary-color;
 }
